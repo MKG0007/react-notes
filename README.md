@@ -69,3 +69,15 @@ export default Comp1
 ```
 
 
+
+## import and export components:
+- there are two ways of import and export.
+### export:
+- **1)named export**(Can have multiple named exports in one file , import name must be same)
+- **2)default export**(Only one default export per file and can be imported by anyname)
+
+### import:
+- **1)for named import**(name should be same and wrapped up in {})
+- **2)for default import**(name can be different and import only one comp)
+
+- 
