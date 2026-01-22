@@ -1,5 +1,15 @@
 # React.js Notes:
 
+## library:
+- A library is a collection of pre-written functions or methods that help perform specific tasks.
+- The developer is in control and decides when and how to use the library functions in the program.
+- example: react , Axios(it is a library use to make http calls)
+
+## frameworks:
+- A framework is a complete structure that provides rules and guidelines to build an application.
+- The framework controls the flow of the program and calls the developer’s code at the required time.
+- example: Django , angular
+
 ## React Environment Set-Up:
 ### There are Two ways to start working with react.js-
 #### 1) Normal React
@@ -31,6 +41,31 @@
 
 
 ## Intro of Vite with react file structure:
-- index.html (first file executed by the react)
-- 
+- **index.html** first file executed by the react)
+- **package.json**(it is a configuration file used in JavaScript / Node.js projects that stores project information, dependencies, scripts, and settings are used)
+- **package.local.json**(auto generated files that contains nested dependenices.)
+- **vite.config.js**(stores the vite configuration)
+- **gitignore**(contain the file and folder names that developer don't want to push on github)
+- **scr folder**(all code files must created inside the src folder)
+- **public**(images and data that you want to keep it publically acesseble)
+- **scr/assests**(contains images and data that you want to keep hidden)
+- **node_modules**(contain all libraries and nested libraries used in the project)
+
+
+## components in react:
+- A component in React is a reusable, independent piece of UI that defines how a part of the user interface should look and behave.
+- a components can contain multiple nested components.
+- component name should always start with uppercase letter.
+- example:
+```javaScript
+import React from 'react'
+const Comp = () => {
+  return (
+    <div>component</div>
+  )
+}
+export default Comp1
+
+```
+
 
