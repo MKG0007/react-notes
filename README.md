@@ -79,5 +79,83 @@ export default Comp1
 ### import:
 - **1)for named import**(name should be same and wrapped up in {})
 - **2)for default import**(name can be different and import only one comp)
+ 
 
-- 
+## JSX in react:
+- it is a syntax extension of JavaScript used in React that lets you write HTML code inside JavaScript.
+- It is converted into JavaScript by tools like Babel at the end.
+
+
+## JSX with curly braces:
+```javaScript
+function sumoftwo(a , b){
+    return a+b;
+}
+const Comp2 = () => {
+  return (
+    <>
+<h1>{obj.name}</h1>
+<h2>{obj.Age} years old</h2>
+<h3>{obj.sirname}</h3>
+<img src={url} alt="" />
+<p>sum of two element: {sumoftwo(20 , 30)}</p>
+    </>
+  )
+}
+
+```
+- as we can create variables, functions and objects both outside or inside and still use it inside the component(because jsx allows you to use any JavaScript expression that is in scope)
+- but for constant values, create outside 
+- and for variable values, create inside the components as they may be depend on the props
+
+
+
+## state in react:
+- State is a built-in object in React used to store data that can change over time and directly affects what is rendered on the UI.
+- we have to import the state to use it(useState hook)
+### why not normal variables
+- they don't trigger re-renders , updates and also lose value on re-renders.
+- **in react, values will only updates when the component re-renders** 
+
+```javaScript
+import {useState } from "react";
+function comp(){
+const [name , setname] = useState("jon");
+
+//name (variable)
+//setname(function to update that variable)
+
+  return(
+    <>
+  <h1>{name}<h1/>
+
+</>
+)
+}
+
+```
+### hide and show in react:
+- in normal js, we use the style property to hide and show the element
+- but in react, we use state for this purpose.
+
+```javaScript
+import {useState } from "react";
+function comp(){
+const [visible , setvisible] = useState(true);
+
+//name (variable)
+//setname(function to update that variable)
+
+  return(
+    <>
+  {
+    visible ? <h1> see me <h1/> : "nothing";
+
+}
+</>
+)
+}
+
+
+```
+
